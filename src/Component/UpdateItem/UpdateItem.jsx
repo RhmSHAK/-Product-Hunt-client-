@@ -9,7 +9,7 @@ console.log(image_hosting_key1);
 const image_hosting = `https://api.imgbb.com/1/upload?key=${image_hosting_key1}`
 const UpdateItem = () => {
     const items = useLoaderData();
-    const {_id,name,Owner_name,Owner_image,Owner_email,description} = items;
+    const {_id,name,Owner_name,Owner_image,Owner_email,description,links,tag} = items;
     console.log(items);
     const { register, handleSubmit , reset} = useForm();
     const axiosPublic = UseAxiosPublic();
@@ -136,6 +136,7 @@ const UpdateItem = () => {
                         </div>
                         <input
                             type="text"
+                            defaultValue={tag}
                             placeholder="Tag"
                             {...register("tag", { required: true })}
                             className="input input-bordered w-full " />
@@ -151,6 +152,7 @@ const UpdateItem = () => {
                         </div>
                         <input
                             type="text"
+                            defaultValue={links}
                             placeholder="External Links"
                             {...register("links", { required: true })}
                             className="input input-bordered w-full " />
