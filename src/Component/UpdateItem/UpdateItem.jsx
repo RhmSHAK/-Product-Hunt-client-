@@ -32,7 +32,9 @@ const UpdateItem = () => {
                 Owner_name: data.Owner_name,
                 Owner_image: data.Owner_image,
                 Owner_email: data.Owner_email,
+                links: data.links,
                 description: data.description,
+                tag: data.tag,
                 image: res.data.data.display_url,
                 
             }
@@ -124,6 +126,39 @@ const UpdateItem = () => {
                        
 
             </div>
+
+
+              {/* tag */}
+              <div className="form-control w-full ">
+                        <div className="label">
+                            <span className="label-text">Tag</span>
+
+                        </div>
+                        <input
+                            type="text"
+                            placeholder="Tag"
+                            {...register("tag", { required: true })}
+                            className="input input-bordered w-full " />
+
+                    </div>
+
+
+                    {/* External Links  */}
+                    <div className="form-control w-full ">
+                        <div className="label">
+                            <span className="label-text">External Links</span>
+
+                        </div>
+                        <input
+                            type="text"
+                            placeholder="External Links"
+                            {...register("links", { required: true })}
+                            className="input input-bordered w-full " />
+
+                    </div>
+
+
+
 
             {/* text area */}
             <label className="form-control my-4">
