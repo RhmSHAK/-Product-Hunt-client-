@@ -17,14 +17,16 @@ import ProductsDetails from "../Page/Home/ProductsDetails/ProductsDetails";
 import FeatureProducts from "../Page/Home/FeatureProducts/FeatureProducts";
 import Products from "../Page/Products/Products";
 import Payment from "../Component/Paymnet/Payment";
-import PaymentGet from "../Component/Paymnet/PaymentGet";
+//import PaymentGet from "../Component/Paymnet/PaymentGet";
 import PrivateRouter from "./PrivateRouter";
+import NotFound from "../Page/NotFound/NotFound";
 
 
 export const router = createBrowserRouter([
     {
       path: "/",
       element: <Main></Main>,
+      errorElement:<NotFound></NotFound>,
       children: [
         {
           path: '/',
@@ -63,6 +65,7 @@ export const router = createBrowserRouter([
     {
       path: 'dashboard',
       element: <DeshBoard></DeshBoard>,
+      errorElement:<NotFound></NotFound>,
       children:[
         //normal user
         {

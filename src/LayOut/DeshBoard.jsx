@@ -46,7 +46,7 @@ const DeshBoard = () => {
                    :
                    isModerator?
                    <>
-                   <p className="text-2xl font-bold text-center">Mode Dashboard</p>
+                   <p className="text-2xl font-bold text-center">Moderator Dashboard</p>
                    <div className="divider"></div>
                    <li>
                                <NavLink to="/dashboard/Product_Review">
