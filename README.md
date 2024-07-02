@@ -60,10 +60,12 @@ Installation:
 1. Create a .env file in the backend directory:
 
      PORT=5000
+   
     MONGODB_URI=<your-mongodb-uri>
+    
     JWT_SECRET=<your-jwt-secret>
 
-2.   Replace <your-mongodb-uri> and <your-jwt-secret> with your actual MongoDB URI and a secret string for JWT.   
+3.   Replace <your-mongodb-uri> and <your-jwt-secret> with your actual MongoDB URI and a secret string for JWT.   
    
 
    
