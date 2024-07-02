@@ -40,10 +40,11 @@ Installation:
 
 1. Clone the repository:
 
-   git clone <repository-url>
+   git clone `<repository-url>`
+   
    cd product-hunt-clone
 
-2. Install dependencies:
+3. Install dependencies:
 
     # Install backend dependencies
    
